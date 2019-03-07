@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# 'leader-settings-changed'
+#
+# leader-settings-changed runs when the leader has set values
+# for the other units to respond to. Much like (config-changed)
+# but for the leaders to send values to other units.
+# Follower units can implement this hook and take action when the
+# leader sets values. For more information read the charm leadership document.
+
+juju-log -l 'INFO' 'Follower changed settings as leader communicated.'

@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# 'update-status'
+#
+# Provides constant feedback to the user about the status
+# of the service the charm is modeling.
+# The charm is run by Juju at regular intervals,
+# and gives authors an opportunity to run code that gets
+# the “health” of the service or services.
+
+status-set active "$(uptime | grep -oe 'average: .*' | sed -e 's/average:/load:/')"

@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# 'stop'
+# stop runs immediately before the end of the unit's destruction sequence.
+# It should be used to ensure that the charm's software is not running,
+# and will not start again on reboot.
+
+# This hook is called when a service removal is requested by the client.
+# It should implement the following logic:
+
+# 1. Stop the service
+# 2. Remove any files/configuration created during the service lifecycle
+# 3. Prepare any backup(s) of the service that are required for restore purposes.
+
+status-set waiting 'Stopped'

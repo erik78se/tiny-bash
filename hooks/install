@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+# 'install'
+#
+# install is run at the beginning of a charm lifecycle.
+# The hook should be used to perform one-time setup operations,
+# such as installing prerequisite software that will not change
+# with configuration changes.
+# Like all hooks this must be idempotent because there are scenarios
+# where this hook can be run more than once.
+#
+
+application-version-set $(grep DISTRIB_RELEASE /etc/lsb-release | cut -d= -sf2)
+
+status-set maintenance 'Installed, waiting for start'
+
+juju-log -l 'INFO' 'Did some installing'

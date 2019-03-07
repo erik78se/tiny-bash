@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# 'upgrade-charm'
+#
+# upgrade-charm runs immediately after any upgrade operation that does
+# not itself interrupt an existing error state. It should be used
+# to reconcile local state written by some other version of the charm
+# into whatever form it needs to take to be manipulated by the current version.
+#
+# While the forced upgrade functionality is intended as a developer tool,
+# and is not generally suitable for end users, it's somewhat optimistic
+# to depend on the functionality never being abused. In light of this,
+# if you need to run an upgrade-charm hook before your other hooks will
+# work correctly, it may be wise to preface all your other hooks with
+# a quick call to your (idempotent) upgrade-charm.
+#
+
+status-set active 'Upgrade complete'

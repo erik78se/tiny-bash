@@ -1,0 +1,9 @@
+name: tiny-bash
+summary: This charm is so small. Its tiny.
+maintainer: Erik Lonroth <erik.lonroth@gmail.com>
+description: |
+  This charm is updating status and not much more. Its written in bash.
+tags:
+  - misc
+  - application_development
+subordinate: false
