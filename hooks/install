@@ -10,8 +10,6 @@
 # where this hook can be run more than once.
 #
 
-application-version-set $(grep DISTRIB_RELEASE /etc/lsb-release | cut -d= -sf2)
-
 status-set maintenance 'Installed, waiting for start'
 
 juju-log -l 'INFO' 'Did some installing'
