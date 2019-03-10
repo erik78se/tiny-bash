@@ -8,4 +8,4 @@
 # and gives authors an opportunity to run code that gets
 # the “health” of the service or services.
 
-status-set active "update-status: $(date +"%H:%M")"
+status-set active "update-status ran: $(date +"%H:%M")"
