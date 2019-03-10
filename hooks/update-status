@@ -8,4 +8,4 @@
 # and gives authors an opportunity to run code that gets
 # the “health” of the service or services.
 
-status-set active "$(uptime | grep -oe 'average: .*' | sed -e 's/average:/load:/')"
+status-set active "update-status: $(date +"%H:%M")"
