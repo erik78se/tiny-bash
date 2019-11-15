@@ -1,7 +1,7 @@
 name: tiny-bash
 summary: This charm is so small. Its tiny.
 maintainer: Erik Lonroth <erik.lonroth@gmail.com>
-series: ["bionic", "disco"]
+series: ["centos7"]
 provides:
   ubuntu:
     interface: ubuntu
