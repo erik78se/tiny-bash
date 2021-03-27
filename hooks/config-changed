@@ -15,5 +15,4 @@
 # it should not start stopped software, but should (if appropriate)
 # restart running software to take configuration changes into account.
 
-juju-log -l 'INFO' 'Configuration changes'
-
+juju-log -l 'INFO' 'config-change ran'

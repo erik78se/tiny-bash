@@ -8,4 +8,5 @@
 # and gives authors an opportunity to run code that gets
 # the “health” of the service or services.
 
+juju-log -l 'INFO' 'update-status ran'
 status-set active "update-status ran: $(date +"%H:%M")"

@@ -14,5 +14,5 @@
 # work correctly, it may be wise to preface all your other hooks with
 # a quick call to your (idempotent) upgrade-charm.
 #
-
+juju-log -l 'INFO' 'upgrade-charm ran'
 status-set active 'Upgrade complete'

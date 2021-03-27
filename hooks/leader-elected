@@ -10,4 +10,4 @@
 # the leader to Juju. For more information read the charm leadership document.
 #
 
-juju-log -l 'INFO' 'This unit is the leader.'
+juju-log -l 'INFO' 'leader-elected ran'

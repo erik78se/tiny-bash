@@ -12,4 +12,4 @@
 
 status-set maintenance 'Installed, waiting for start'
 
-juju-log -l 'INFO' 'Did some installing'
+juju-log -l 'INFO' 'install-ran'

@@ -12,4 +12,5 @@
 # 2. Remove any files/configuration created during the service lifecycle
 # 3. Prepare any backup(s) of the service that are required for restore purposes.
 
+juju-log -l 'INFO' 'stop ran'
 status-set waiting 'Stopped'

@@ -7,4 +7,5 @@
 # Note that the charm's software should be configured so as to
 # persist through reboots without further intervention on juju's part.
 
-status-set active 'Started tiny-bash'
+juju-log -l 'INFO' 'start ran'
+status-set active 'Started.'
