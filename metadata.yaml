@@ -8,4 +8,10 @@ tags:
   - misc
   - application_development
 subordinate: false
+
+requires:
+  shared-fs:
+    interface: mount
+    optional: true
+
 docs: https://github.com/erik78se/tiny-bash/README.md
