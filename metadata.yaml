@@ -1,17 +1,11 @@
 name: tiny-bash
 summary: This charm is so small. Its tiny.
 maintainer: Erik Lonroth <erik.lonroth@gmail.com>
-series: ["bionic", "disco", "focal"]
+series: ["bionic", "focal"]
 description: |
-  This charm is for educational purpose to help charmers learn about juju hooks.
+  This charm is a tiny hooks-only charm. It does nothing.
 tags:
   - misc
-  - application_development
 subordinate: false
-
-requires:
-  shared-fs:
-    interface: mount
-    optional: true
 
 docs: https://github.com/erik78se/tiny-bash/README.md

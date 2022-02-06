@@ -1,27 +1,33 @@
 # Overview
 
-A tiny charm.
-
-It uses "hooks only" to deploy.
-
-See: https://docs.jujucharms.com/2.5/en/reference-charm-hooks
+The tiny-bash charm that use "hooks only" to deploy. Since its super small and only uses hooks, it deploys very fast.
 
 ## What it does
 
- * Executes the hooks in the hooks directory as part of the juju event cycle.
+This charm just logs the hooks it runs. But doesn't do anything. Check out the logs with:
 
-Check out the 'hooks' directory to learn.
+    juju debug-log 
+	
+## Deploy from charmhub
 
-# Usage
+    juju deploy tiny-bash
 
-```
-charm pull cs:~erik-lonroth/tiny-bash  && juju deploy ./tiny-bash
-```
+## Deploy from  development host
 
-# Configuration
+Hook-only charms doesn't need to be built, so you can deploy straight from the directory:
 
-None
+    git clone git@github.com:erik78se/tiny-bash.git
+    juju deploy ./tiny-bash
+
+## Build  the charm
+
+You can build the charm if you like with charmcraft:
+
+    git clone git@github.com:erik78se/tiny-bash.git
+	charmcraft build
+    juju deploy ./tiny-bash.charm
 
 # Contact Information
 
 Erik Lönroth <erik.lonroth@gmail.com>
+
