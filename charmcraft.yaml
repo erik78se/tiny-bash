@@ -1,18 +1,20 @@
+name: tiny-bash
 type: charm
+title: A tiny bash charm.
+summary: |
+  The tiny-bash deploys very fast.
+description: |
+  The tiny-bash charm that use "hooks only" to deploy. 
+  Since its super small and only uses hooks, it deploys very fast
 
-bases:
-  - build-on:
-    - name: "ubuntu"
-      channel: "20.04"
-    run-on:
-    - name: "ubuntu"
-      channel: "18.04"
-    - name: "ubuntu"
-      channel: "20.04"
-    - name: "ubuntu"
-      channel: "22.04"
+platforms:
+  ubuntu@24.04:amd64:
+  ubuntu@22.04:amd64:
+  ubuntu@20.04:amd64:
+  ubuntu@18.04:amd64:
 
-
+config:
+  options: {}
 
 
 parts:
@@ -22,8 +24,6 @@ parts:
     prime:
       - LICENSE
       - README.md
-      - config.yaml
       - copyright
       - hooks
       - icon.svg
-      - metadata.yaml
