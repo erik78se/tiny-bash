@@ -8,6 +8,7 @@ description: |
   Since its super small and only uses hooks, it deploys very fast
 
 platforms:
+  ubuntu@26.04:amd64:
   ubuntu@24.04:amd64:
   ubuntu@22.04:amd64:
   ubuntu@20.04:amd64:
